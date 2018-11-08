@@ -17,3 +17,6 @@ author: Nurul Ferdous
 * ধাপ ৬: কাউন্টার নম্বর প্রবেশ করুনঃ 1
 * ধাপ ৭: লেনদেন নিশ্চিত করতে পিন প্রবেশ করুনঃ XXXX
 * ধাপ ৮: লেনদেন সম্পূর্ণ করতে লেনদেন আইডি ব্যবহার করুন
+
+
+![screenshot](https://www.dropbox.com/s/rtbhvn2sjhxki8g/Screenshot%202018-11-06%2017.07.11.png?dl=1)
