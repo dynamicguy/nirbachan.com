@@ -1,0 +1,10 @@
+home:
+  header:
+    headline: সংসদ নির্বাচন - এন্ড্রয়েড এপ
+    call_to_action:
+      title: সহায়তা
+      link: /help
+
+footer:
+  love: 'ভালবাসা দিয়ে তৈরি<span class="accent">❤</span>'
+  copyright: All rights reserved
