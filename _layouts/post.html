@@ -25,7 +25,7 @@ layout: default
             <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
               <div class="post__container">
                 <header class="post__header">
-                  <h1 class="title" itemprop="name headline">{{ page.title | escape }}</h1>
+                  <h1 class="card-title" itemprop="name headline">{{ page.title | escape }}</h1>
                   <p class="meta">
                     <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                       {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
@@ -36,7 +36,7 @@ layout: default
                     {% endif %}</p>
                 </header>
 
-                <div class="post__content" itemprop="articleBody">
+                <div class="card-text" itemprop="articleBody">
                   {{ content }}
                 </div>
 
