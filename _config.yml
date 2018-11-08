@@ -28,9 +28,9 @@ languages: ["bn"]
 ampdir: amp
 
 ### Google webmaster tools, Google Analytics, Doorbell and Cookie consent uncomment and put the API key
-#webmaster_verifications:
-#  google: verification_code
-#google_analytics: id
+webmaster_verifications:
+  google: google47da27f605062f75
+google_analytics: UA-128949375-1
 #doorbell:
 #  id: doorbell_id
 #  appKey: doorbell_appKey
