@@ -1,28 +1,55 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="post__container">
-    <header class="post__header">
-      <h1 class="post__title" itemprop="name headline">{{ page.title | escape }}</h1>
-      <p class="post__meta">
-        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-          {{ page.date | date: date_format }}
-        </time>
-        {% if page.author %}
-          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-        {% endif %}</p>
-    </header>
 
-    <div class="post__content" itemprop="articleBody">
-      {{ content }}
-    </div>
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">{% t home.header.headline %}</h1>
+    <p class="lead">এই অ্যাপ আমাদের দীর্ঘ দিনের অক্লান্ত পরিশ্রমের ফসল। এটি নিয়মিত আপডেট করা হবে। মোবাইলে
+      আঙ্গুলের টিপে সহজে তথ্য
+      পাওয়ার মাধ্যমে নির্বাচিত ও সাবেক সংসদ সদস্যগণ, রাজনৈতিক নেত্রীবৃন্দ, কর্মী, গবেষক, ইতিহাসবিদ এবং আগ্রহী নাগরিকগণের
+      তাৎক্ষনিক প্রয়োজন মেটালে আমাদের পরিশ্রম সার্থক বলে গণ্য হবে।</p>
+    <p>
+      <a href="https://www.dropbox.com/s/vtwlmmsvkuliava/nirbachan-release.apk?dl=1" class="btn btn-lg btn-primary my-2">এই
+        সাইট থেকে ডাউনলোড করুন</a>
+    </p>
+  </div>
+</section>
 
-    <div class="post__comments">
-    {% if site.disqus.shortname %}
-      {% include disqus_comments.html %}
-    {% endif %}
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+              <div class="post__container">
+                <header class="post__header">
+                  <h1 class="title" itemprop="name headline">{{ page.title | escape }}</h1>
+                  <p class="meta">
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                      {{ page.date | date: date_format }}
+                    </time>
+                    {% if page.author %}
+                    • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+                    {% endif %}</p>
+                </header>
+
+                <div class="post__content" itemprop="articleBody">
+                  {{ content }}
+                </div>
+
+                <div class="post__comments">
+                  {% if site.disqus.shortname %}
+                  {% include disqus_comments.html %}
+                  {% endif %}
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</article>
+</div>
