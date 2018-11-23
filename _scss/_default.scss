@@ -1,4 +1,4 @@
-@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
   background: #f8f9fa;
@@ -16,10 +16,12 @@ body {
   -moz-border-radius: 0;
   border-radius: 0;
   color: #fff;
-  p{color: #fff;}
+  p {
+    color: #fff;
+  }
 }
 
-.meta{
+.meta {
   color: #9E9E9E;
   font-size: 90%;
   margin: 0 auto;
@@ -27,4 +29,12 @@ body {
 
 .card-title {
   margin-bottom: 0;
+}
+
+a {
+  display: inline-block;
+}
+
+footer{
+  margin-bottom: 20px;
 }
