@@ -8,18 +8,13 @@ body {
   width: 55px;
 }
 
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .jumbotron.text-center {
   margin: 0 auto;
   padding: 20px 0 10px;
   background-image: url("/assets/images/tron.jpg");
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   color: #fff;
   p{color: #fff;}
 }

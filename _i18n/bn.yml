@@ -6,5 +6,5 @@ home:
       link: /help
 
 footer:
-  love: ভালোবাসা দিয়ে তৈরি করেছে <span class="accent">❤</span>
-  copyright: All rights reserved
+  love: ভালোবাসা দিয়ে তৈরি করেছে <span class="text-danger">❤</span>
+  copyright: &copy; 2018 All rights reserved.
